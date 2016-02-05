@@ -3,6 +3,9 @@ package chapter10;
 import java.util.EmptyStackException;
 
 public class Chapter10 {
+	/*
+	 * This is just a main to help me test whatever I've implemented, not a formal test case, I know.
+	 */
 	public static void main(String args[]){
 	testStack();
 	}
