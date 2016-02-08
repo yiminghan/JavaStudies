@@ -7,13 +7,11 @@ import java.util.ArrayList;
  */
 public class AlgorithmRunner {
 
-	
+	/*
+	 * Choose whatever problem you want to solve.
+	 */
 	public static void main(String args[]){
-		try {
-			rodCutter();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		LongestPal();
 	}
 	
 	/*
@@ -35,5 +33,20 @@ public class AlgorithmRunner {
 		RodCutter R = new RodCutter();
 		String out = R.printCut(v, 5);
 		System.out.println(out);
+	}
+	
+	public static void TwoBagKnapSack() throws Exception{
+		Integer[] w = new Integer[]{1,2,4,5,7,8};
+		Integer[] v = new Integer[]{1,3,7,8,10,20};
+		Integer c = 8;
+		TwoBagKnapSackProblem B = new TwoBagKnapSackProblem(w,v,c);
+		Integer sol = B.OPTKnapsack(5,c,c);
+		String out = B.printSol(5, c, c);
+		System.out.println(out);
+	}
+	
+	public static void LongestPal(){
+		LongestPalindrome LP = new LongestPalindrome("racecar");
+		System.out.println(LP.solve());
 	}
 }
